@@ -28,7 +28,7 @@ n がこの範囲外の場合、エラーメッセージが返されます。
 1. 正常なリクエスト：
 
 ```sql
-curl -X GET "http://localhost:8000/fib?n=10"
+curl -X GET "https://fib-api-4cgh.onrender.com/fib?n=10"
 ```
 
 応答：{"result": 55}
@@ -36,7 +36,7 @@ curl -X GET "http://localhost:8000/fib?n=10"
 1. エラーの場合（負の数）：
 
 ```sql
-curl -X GET "http://localhost:8000/fib?n=-1"
+curl -X GET "https://fib-api-4cgh.onrender.com/fib?n=-1"
 ```
 
 応答：{"detail": "Negative numbers are not allowed"}
