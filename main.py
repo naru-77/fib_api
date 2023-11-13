@@ -31,7 +31,7 @@ def read_fib(n: Optional[int] = None):
     except ValueError as e:
         raise HTTPException(status_code=400, detail=str(e))
 
-# ユニットテストの例
+# ユニットテスト
 def test_fibonacci():
     assert fibonacci(10) == 55
     assert fibonacci(0) == 0
